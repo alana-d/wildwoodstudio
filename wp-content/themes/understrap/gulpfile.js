@@ -118,6 +118,13 @@ gulp.task( 'browser-sync', function() {
     browserSync.init( cfg.browserSyncWatchFiles, cfg.browserSyncOptions );
 } );
 
+//new
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        proxy: "localhost:8888"
+    });
+});
+
 // Run:
 // gulp watch-bs
 // Starts watcher with browser-sync. Browser-sync reloads page automatically on your browser

@@ -1,1 +1,112 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+//colours
+
+$blue: #476278;
+$dkgrey: #333;
+$white: #fff;
+
+//text
+
+@font-face {
+  font-family: 'noto_serifregular';
+  src: url("../type/notoserif-regular-webfont.woff2") format("woff2"), url("../type/notoserif-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'noto_serifbold';
+  src: url("../type/notoserif-bold-webfont.woff2") format("woff2"), url("../type/notoserif-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+body{
+    color:$dkgrey!important;
+    font-family: 'noto_serifregular'!important;
+}
+
+
+a:link, a:visited{
+    color:$blue!important;
+}
+
+a:hover{
+    color:darken($blue, 3%)!important;
+}
+
+
+
+//buttons
+
+.btn{
+    background-color:$blue!important;
+    border-radius:0.2rem!important;
+}
+
+.btn:hover{
+    background-color: darken($blue, 3%)!important;
+    cursor: pointer;
+}
+
+a:link.btn{
+    color:$white!important;
+}
+
+
+//header
+
+.bg-primary{
+  background-color: #fff !important;
+}
+
+
+//brand
+
+.brand img{
+    width:50px!important;
+    padding-top:1.5em;
+}
+
+.brand{
+    font-size:1.5rem;
+}
+
+.navbar-brand, .brand{
+    text-align:center;
+    margin:0 auto!important;
+}
+
+
+//nav
+
+#wrapper-navbar a:link{
+    color:$dkgrey!important;
+}
+
+.current-menu-item a:link, .current-page-item a:link, .active a:link, .current-menu-item a:visited, .current-page-item a:visited, .active a:visited{
+    color:$dkgrey!important;
+}
+
+#wrapper-navbar a:hover, .current-menu-item a:hover, .current-page-item a:hover, .active a:hover{
+    color:$blue!important;
+}
+
+.navbar-nav .nav-link{
+    padding:1.5rem 1.5rem 0!important;
+}
+
+.navbar-nav .nav-link:hover{
+    cursor: pointer!important;
+}
+
+.navbar-toggler{
+    border-color:$dkgrey!important;
+}
+
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51,51,51, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
+@media (min-width:768px) { 
+
+}
